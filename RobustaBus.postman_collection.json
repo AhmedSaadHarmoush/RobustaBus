@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "1b38f72c-75d1-419a-a6a1-11d99c97f526",
+		"name": "RobustaBus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "City",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Governorate",
+			"item": [
+				{
+					"name": "GET",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"value_AR\": \"القاهرة\",\r\n        \"value_EN\": \"Cairo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/governorates/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"governorates",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Nmae\",\r\n        \"email\": \"name@test.com\",\r\n        \"password\":\"123456\",\r\n        \"password_confirmation\":\"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "AvailableBookings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add booking",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZTQ4ZjJjMWUwYmE4NTM2Mjc3ODE3M2VjZjllMTRjZGZkNTA2NDQ3ZDUzNjNhMjNlZDllYzlhNjg5ODA4MDcwMzMyNjk0MGM1YzU2MWNjNDQiLCJpYXQiOiIxNjA3ODQ1ODc5LjYwNDk3MyIsIm5iZiI6IjE2MDc4NDU4NzkuNjA0OTkxIiwiZXhwIjoiMTYzOTM4MTg3OC40OTg1MzMiLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.r20qF09U3DWoOuACgH8Q-pDnpXtPurZ2tk6F9ObGO2TwCwbeG3gXboSywnk4onO33ZGVEsPJIXKpzxU03y6vF8upE8snsxZFMCt_AAMLehAljJwfInFp4N4FeWVLFwuFmuhLwL5_LstvaxcQQyNzToixTiNQreZy7RAHHHTS_gVZx6YL-VgIaBU85nYTvxe6Q9syYOBcdf1QvF381NGLxeEyS8ndONisirdSCGd8s-FNKmNd38wk2g5XJxZPC03yOI0gIE4k_joIAPFbUXEkTnF18p0YTtYh5LxW8vQN1WMPsirIXWhl6V2rmxZfgeTld9m0NIxzGWOQp7cN5EJ-KlAmSiTU44yqS7WuCm3dxE-BH4VejyHkZZOw9d_RWfEf23g4v1V8ISrbX_bmxMV7lW7A6ZK4Sw6vzTFgA67UEZLcVNV9rNaVheuWOl9f16HyWUdSH_kZcbtYLUqpTGoH1ln6j4PsZCHk2pRGYKIgH4bWr7kYXIM0klIGlccoEXHMOt6wr97i9joD8JfdRIrtxy46gSfB_dYLRSuzHLIPaAmAcyskFYxsvGzAr2XYswiZ9kRGZGi7xDXvcWmBxo8kT2GCdhnLG7xpPhnr8lF4NyRtkNpRWxitqPvLnDInYRtZzT8x_pMnNUu2EaLEqDAz9JfCW_DfBrXBqgaO3L4GwbI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"tripId\":1,\r\n    \"startCityId\":18,\r\n    \"endCityId\":11,\r\n    \"seatId\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/booking",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"booking"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
